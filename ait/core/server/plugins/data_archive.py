@@ -81,5 +81,4 @@ class DataArchive(Plugin):
             decoded = tlm.Packet(defn, data=bytearray(pkt))
             self.dbconn.insert(decoded, **kwargs)
         except Exception as e:
-            log.error('Data archival failed with error: {}.'.format(e))
-
+            pass
